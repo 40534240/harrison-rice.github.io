@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="webstyles.css">
+</head>
+<body>
+<table>
+  <tr>
+	<th><h1><a href="webHome.html">Lets M-Eat</a></h1></th>
+    <th><label for="Recipes">Recipes</label></th>
+    <th>Top rated</th>
+    <th><label for="Special occasions">Special occasions</label></th>
+	<th>Easy and quick</th>
+    <th>Cheap</th>
+	<th>About us</th>
+  </tr>
+  <tr>
+    <td></td>
+    <td><select name="Recipes" id="Recipes" onChange="goToPage()">
+	<option value="recipes">Recipes</option>
+	<option value="meals.html">Meals</option>
+	<option value="meats.html">Meats</option>
+	<option value="cooking_styles.html">Cooking styles</option>
+	<option value="regional.html">Regional</option>
+	<option value="all_recipes.html">All recipes</option>
+	</select></td>
+    <td></td>
+	<td><select name="Special occasions" id="Special occasions" onChange="goToPage2()">
+	<option value="Special occasions">Special occasions</option>
+	<option value="Dinner party">Dinner party</option>
+	<option value="Easter">Easter</option>
+	<option value="Christmas">Christmas</option>
+	<option value="BBQ party">BBQ party</option>
+	<option value="Burns night">Burns night</option>
+	<option value="Chinese New Year">Chinese New Year</option>
+	<option value="Hanukkah">Hanukkah</option>
+	<option value="Ramadan">Ramadan</option>
+	</select></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td><input type="text" id="search" size=64></td>
+  </tr>
+</table>
+<script>
+function goToPage() {
+  var dropdown = document.getElementById("Recipes");
+  var selectedValue = dropdown.options[dropdown.selectedIndex].value;
+  if (selectedValue !== "") {
+    window.location = selectedValue;
+  }
+}
+</script>
+<script>
+function goToPage2() {
+  var dropdown = document.getElementById("Special occasions");
+  var selectedValue = dropdown.options[dropdown.selectedIndex].value;
+  if (selectedValue !== "") {
+    window.location = selectedValue;
+  }
+}
+</script>
+<table>
+  <tr>
+	<th><h1>SUNNY BROCHETTES</h1></th>
+    <th></th>
+  </tr>
+  <tr>
+    <td><img src="Sunny_brochettes.jpeg" alt="Sunny brochettes"></td>
+    <td></td>
+  </tr>
+   <tr>
+    <td><h2>ingredients</h2></td>
+    <td><h2>instructions</h2></td>
+  </tr>
+   <tr>
+    <td><p>2 olive oil, plus a little for the dish</p>
+<p>750g lean beef mince</p>
+<p>90g pack prosciutto</p>
+<p>tomato sauce</p>
+<p>200ml hot beef stock</p>
+<p>a little grated nutmeg</p>
+<p>300g pack fresh lasagne sheets</p>
+<p>white sauce</p>
+<p>125g ball mozzarella, torn into thin strips</p>
+</td>
+    <td><p>To make the meat sauce, heat 2 tbsp olive oil in a frying pan and cook 750g lean beef mince in two batches for about 10 mins until browned all over.</p>
+
+<p>Finely chop 4 slices of prosciutto from a 90g pack, then stir through the meat mixture.</p>
+
+<p>Pour over 800g passata or half our basic tomato sauce recipe and 200ml hot beef stock. Add a little grated nutmeg, then season.</p>
+
+<p>Bring up to the boil, then simmer for 30 mins until the sauce looks rich.</p>
+
+<p>Heat oven to 180C/fan/160C/gas 4 and lightly oil an ovenproof dish (about 30 x 20cm).</p>
+
+<p>Spoon one third of the meat sauce into the dish, then cover with some fresh lasagne sheets from a 300g pack. Drizzle over roughly 130g ready-made or homemade white sauce.</p>
+
+<p>Repeat until you have 3 layers of pasta. Cover with the remaining 390g white sauce, making sure you can’t see any pasta poking through.</p>
+
+<p>Scatter 125g torn mozzarella over the top.</p>
+
+<p>Arrange the rest of the prosciutto on top. Bake for 45 mins until the top is bubbling and lightly browned.</p></td>
+  </tr>
+</table>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="webstyles.css">
+<table>
+  <tr>
+	<th><h1><a href="webHome.html">Lets M-Eat</a></h1></th>
+    <th><label for="Recipes">Recipes</label></th>
+    <th>Top rated</th>
+    <th><label for="Special occasions">Special occasions</label></th>
+	<th>Easy and quick</th>
+    <th>Cheap</th>
+	<th>About us</th>
+  </tr>
+  <tr>
+    <td></td>
+    <td><select name="Recipes" id="Recipes" onChange="goToPage()">
+	<option value="recipes">Recipes</option>
+	<option value="meals.html">Meals</option>
+	<option value="meats.html">Meats</option>
+	<option value="cooking_styles.html">Cooking styles</option>
+	<option value="regional.html">Regional</option>
+	<option value="all_recipes.html">All recipes</option>
+	</select></td>
+    <td></td>
+	<td><select name="Special occasions" id="Special occasions" onChange="goToPage2()">
+	<option value="Special occasions">Special occasions</option>
+	<option value="Dinner party">Dinner party</option>
+	<option value="Easter">Easter</option>
+	<option value="Christmas">Christmas</option>
+	<option value="BBQ party">BBQ party</option>
+	<option value="Burns night">Burns night</option>
+	<option value="Chinese New Year">Chinese New Year</option>
+	<option value="Hanukkah">Hanukkah</option>
+	<option value="Ramadan">Ramadan</option></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td><input type="text" id="search" size=64></td>
+  </tr>
+</table>
+<script>
+function goToPage() {
+  var dropdown = document.getElementById("Recipes");
+  var selectedValue = dropdown.options[dropdown.selectedIndex].value;
+  if (selectedValue !== "") {
+    window.location = selectedValue;
+  }
+}
+</script>
+<script>
+function goToPage2() {
+  var dropdown = document.getElementById("Special occasions");
+  var selectedValue = dropdown.options[dropdown.selectedIndex].value;
+  if (selectedValue !== "") {
+    window.location = selectedValue;
+  }
+}
+</script>
+</head>
+<body>
+<p>Privacy Notice</p>
+
+<p>This Privacy Notice describes how we collect, use, and share information that we obtain about visitors to our website.</p>
+
+<p>Information We Collect: We collect personal information that you voluntarily provide to us, such as your name and email address, when you submit a contact form, sign up for our newsletter, or otherwise communicate with us. We also automatically collect certain information about your device and browsing activity, such as your IP address and pages visited.</p>
+
+<p>Use of Information: We use the information we collect to provide and improve our services, respond to your inquiries, send you marketing communications, and comply with legal obligations.</p>
+
+<p>Sharing of Information: We may share your information with service providers who assist us in operating our website and delivering our services. We may also disclose your information in response to a legal request or to protect our rights or property.</p>
+
+<p>Security of Information: We use reasonable administrative, technical, and physical security measures to protect the information we collect. However, no security system is perfect, and we cannot guarantee the security of your information.</p>
+
+<p>Your Choices: You may opt out of receiving marketing communications from us by following the instructions provided in the communication. You may also request access, correction, or deletion of your personal information by contacting us using the information below.</p>
+
+<p>Contact Us: If you have any questions or concerns about our privacy practices, please contact us at [insert contact information].</p>
+
+<p>Changes to this Privacy Notice: We may update this Privacy Notice from time to time. The most current version will be posted on our website</p>
+
+</body>
+
+</html>

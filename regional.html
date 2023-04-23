@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="webstyles.css">
+<table>
+  <tr>
+	<th><h1><a href="webHome.html">Lets M-Eat</a></h1></th>
+    <th><label for="Recipes">Recipes</label></th>
+    <th>Top rated</th>
+    <th><label for="Special occasions">Special occasions</label></th>
+	<th>Easy and quick</th>
+    <th>Cheap</th>
+	<th>About us</th>
+  </tr>
+  <tr>
+    <td></td>
+    <td><select name="Recipes" id="Recipes" onChange="goToPage()">
+	<option value="recipes">Recipes</option>
+	<option value="meals.html">Meals</option>
+	<option value="meats.html">Meats</option>
+	<option value="cooking_styles.html">Cooking styles</option>
+	<option value="regional.html">Regional</option>
+	<option value="all_recipes.html">All recipes</option>
+	</select></td>
+    <td></td>
+	<td><select name="Special occasions" id="Special occasions" onChange="goToPage2()">
+	<option value="maintenance.html">Special occasions</option>
+	<option value="maintenance.html">Dinner party</option>
+	<option value="maintenance.html">Easter</option>
+	<option value="maintenance.html">Christmas</option>
+	<option value="maintenance.html">BBQ party</option>
+	<option value="maintenance.html">Burns night</option>
+	<option value="maintenance.html">Chinese New Year</option>
+	<option value="maintenance.html">Hanukkah</option>
+	<option value="maintenance.html">Ramadan</option>
+	</select></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td><input type="text" id="search" size=64></td>
+  </tr>
+</table>
+<script>
+function goToPage() {
+  var dropdown = document.getElementById("Recipes");
+  var selectedValue = dropdown.options[dropdown.selectedIndex].value;
+  if (selectedValue !== "") {
+    window.location = selectedValue;
+  }
+}
+</script>
+<script>
+function goToPage2() {
+  var dropdown = document.getElementById("Special occasions");
+  var selectedValue = dropdown.options[dropdown.selectedIndex].value;
+  if (selectedValue !== "") {
+    window.location = selectedValue;
+  }
+}
+</script>
+</head>
+<body>
+
+<table>
+  <tr>
+	<th><h1>Regional Section</h1></th>
+    <th></th>
+  </tr>
+  <tr>
+    <td><h2><a href="maintenance.html">Italian</a></h2></td>
+    <td><h2><a href="maintenance.html">Spanish</a></h2></td>
+    <td><h2><a href="maintenance.html">British</a></h2></td>
+    <td><h2><a href="maintenance.html">Eastern Europe</a></h2></td>
+  </tr>
+  <tr>
+    <td><h2><a href="maintenance.html">French</a></h2></td>
+    <td><h2><a href="maintenance.html">Indian</a></h2></td>
+    <td><h2><a href="maintenance.html">Mexican</a></h2></td>
+    <td><h2><a href="maintenance.html">American</a></h2></td>
+  </tr>
+</table>
+</body>
+
+</html>

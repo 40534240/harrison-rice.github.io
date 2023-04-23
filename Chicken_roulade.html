@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="webstyles.css">
+</head>
+<body>
+<table>
+  <tr>
+	<th><h1><a href="webHome.html">Lets M-Eat</a></h1></th>
+    <th><label for="Recipes">Recipes</label></th>
+    <th>Top rated</th>
+    <th><label for="Special occasions">Special occasions</label></th>
+	<th>Easy and quick</th>
+    <th>Cheap</th>
+	<th>About us</th>
+  </tr>
+  <tr>
+    <td></td>
+    <td><select name="Recipes" id="Recipes" onChange="goToPage()">
+	<option value="recipes">Recipes</option>
+	<option value="meals.html">Meals</option>
+	<option value="meats.html">Meats</option>
+	<option value="cooking_styles.html">Cooking styles</option>
+	<option value="regional.html">Regional</option>
+	<option value="all_recipes.html">All recipes</option>
+	</select></td>
+    <td></td>
+	<td><select name="Special occasions" id="Special occasions">
+	<option value="Special occasions">Special occasions</option>
+	<option value="Dinner party">Dinner party</option>
+	<option value="Easter">Easter</option>
+	<option value="Christmas">Christmas</option>
+	<option value="BBQ party">BBQ party</option>
+	<option value="Burns night">Burns night</option>
+	<option value="Chinese New Year">Chinese New Year</option>
+	<option value="Hanukkah">Hanukkah</option>
+	<option value="Ramadan">Ramadan</option></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td><input type="text" id="search" size=64></td>
+  </tr>
+</table>
+<script>
+function goToPage() {
+  var dropdown = document.getElementById("Recipes");
+  var selectedValue = dropdown.options[dropdown.selectedIndex].value;
+  if (selectedValue !== "") {
+    window.location = selectedValue;
+  }
+}
+</script>
+<table>
+  <tr>
+	<th><h1>CHICKEN ROULADE</h1></th>
+    <th></th>
+  </tr>
+  <tr>
+    <td><img src="Chicken_roulade.jpeg" alt="Chicken roulade"></td>
+    <td></td>
+  </tr>
+   <tr>
+    <td><h2>ingredients</h2></td>
+    <td><h2>instructions</h2></td>
+  </tr>
+    <tr>
+    <td>
+<p>2 tablespoons extra-virgin olive oil plus more for brushing</p>
+<p>4 6-8-ounce skinless, boneless chicken breasts, pounded to 1/8-inch thicknes</p>
+<p>Kosher salt and freshly ground black pepper</p>
+<p>4 ounces feta, crumbled</p>
+<p>2 tablespoons minced fresh oregano</p>
+<p>4 garlic cloves, minced</p>
+<p>1 /2 teaspoon finely grated lemon zest</p>
+<p>1 /2 cup dry white wine</p>
+<p>1 /2 cup low-salt chicken broth</p>
+<p>2 tablespoons fresh lemon juice</p>
+<p>Lemon wedges</p>
+</td>
+    <td><p>Line a baking sheet with waxed paper; brush with oil. Arrange chicken breasts in a single layer on prepared sheet and brush all over with oil. Season with salt and pepper. Sprinkle chicken with feta, oregano, garlic, and lemon zest, dividing evenly and keeping filling away from edges. Beginning at the narrower end of 1 chicken breast, roll up, enclosing filling as you would a jelly roll; tie with kitchen twine at 1" intervals to secure. Repeat with remaining chicken breasts.</p>
+
+<p>Preheat oven to 450°. Heat 2 Tbsp. oil in a large heavy skillet over medium-high heat. Add chicken roulades and cook until brown on all sides, about 10 minutes. Transfer chicken roulades to a small roasting pan and bake until an instant-read thermometer inserted into the thickest part of roulades registers 160°, 5-7 minutes.</p>
+
+<p>Add wine, broth, and lemon juice to skillet; bring to a boil and cook, scraping up any brown bits, until reduced to 1/2 cup, about 5 minutes. Cut strings from roulades and place on plates. Spoon pan juices over; serve lemon wedges alongside for squeezing over.</p>
+
+</td>
+  </tr>
+</table>
+</body>
+
+</html>

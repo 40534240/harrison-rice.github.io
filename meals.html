@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="webstyles.css">
+<table>
+  <tr>
+	<th><h1><a href="webHome.html">Lets M-Eat</a></h1></th>
+    <th><label for="Recipes">Recipes</label></th>
+    <th>Top rated</th>
+    <th><label for="Special occasions">Special occasions</label></th>
+	<th>Easy and quick</th>
+    <th>Cheap</th>
+	<th>About us</th>
+  </tr>
+  <tr>
+    <td></td>
+    <td><select name="Recipes" id="Recipes" onChange="goToPage()">
+	<option value="recipes">Recipes</option>
+	<option value="meals.html">Meals</option>
+	<option value="meats.html">Meats</option>
+	<option value="cooking_styles.html">Cooking styles</option>
+	<option value="regional.html">Regional</option>
+	<option value="all_recipes.html">All recipes</option>
+	</select></td>
+    <td></td>
+	<td><select name="Special occasions" id="Special occasions" onChange="goToPage2()">
+	<option value="Special occasions.html">Special occasions</option>
+	<option value="Dinner party.html">Dinner party</option>
+	<option value="Easter.html">Easter</option>
+	<option value="Christmas.html">Christmas</option>
+	<option value="BBQ_party.html">BBQ party</option>
+	<option value="Burns_night.html">Burns night</option>
+	<option value="Chinese_New_Year.html">Chinese New Year</option>
+	<option value="Hanukkah.html">Hanukkah</option>
+	<option value="Ramadan.html">Ramadan</option>
+	</select></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td><input type="text" id="search" size=64></td>
+  </tr>
+</table>
+<script>
+function goToPage() {
+  var dropdown = document.getElementById("Recipes");
+  var selectedValue = dropdown.options[dropdown.selectedIndex].value;
+  if (selectedValue !== "") {
+    window.location = selectedValue;
+  }
+}
+</script>
+<script>
+function goToPage2() {
+  var dropdown = document.getElementById("Special occasions");
+  var selectedValue = dropdown.options[dropdown.selectedIndex].value;
+  if (selectedValue !== "") {
+    window.location = selectedValue;
+  }
+}
+</script>
+</head>
+<body>
+
+<table>
+  <tr>
+	<th><h1>Meals Section</h1></th>
+    <th></th>
+  </tr>
+  <tr>
+    <td><h2><a href="breakfast.html">Breakfast</a></h2></td>
+    <td><h2><a href="lunch.html">Lunch</a></h2></td>
+	<td><h2><a href="dinner.html">Dinner</a></h2></td>
+  </tr>
+</table>
+</body>
+
+</html>

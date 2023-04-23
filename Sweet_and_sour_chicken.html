@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="webstyles.css">
+<table>
+  <tr>
+	<th><h1><a href="webHome.html">Lets M-Eat</a></h1></th>
+    <th><label for="Recipes">Recipes</label></th>
+    <th>Top rated</th>
+    <th><label for="Special occasions">Special occasions</label></th>
+	<th>Easy and quick</th>
+    <th>Cheap</th>
+	<th>About us</th>
+  </tr>
+  <tr>
+    <td></td>
+    <td><select name="Recipes" id="Recipes" onChange="goToPage()">
+	<option value="recipes">Recipes</option>
+	<option value="meals.html">Meals</option>
+	<option value="meats.html">Meats</option>
+	<option value="cooking_styles.html">Cooking styles</option>
+	<option value="regional.html">Regional</option>
+	<option value="all_recipes.html">All recipes</option>
+	</select></td>
+    <td></td>
+	<td><select name="Special occasions" id="Special occasions" onChange="goToPage2()">
+	<option value="Special occasions">Special occasions</option>
+	<option value="Dinner party">Dinner party</option>
+	<option value="Easter">Easter</option>
+	<option value="Christmas">Christmas</option>
+	<option value="BBQ party">BBQ party</option>
+	<option value="Burns night">Burns night</option>
+	<option value="Chinese New Year">Chinese New Year</option>
+	<option value="Hanukkah">Hanukkah</option>
+	<option value="Ramadan">Ramadan</option></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td><input type="text" id="search" size=64></td>
+  </tr>
+</table>
+<script>
+function goToPage() {
+  var dropdown = document.getElementById("Recipes");
+  var selectedValue = dropdown.options[dropdown.selectedIndex].value;
+  if (selectedValue !== "") {
+    window.location = selectedValue;
+  }
+}
+<script>
+function goToPage2() {
+  var dropdown = document.getElementById("Special occasions");
+  var selectedValue = dropdown.options[dropdown.selectedIndex].value;
+  if (selectedValue !== "") {
+    window.location = selectedValue;
+  }
+}
+</script>
+</head>
+<body>
+
+<table>
+  <tr>
+	<th><h1>Sweet and sour chicken</h1></th>
+    <th></th>
+  </tr>
+  <tr>
+    <td><img src="sweet_sour.jpeg" alt="sweet_sour"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><h2>ingredients</h2></td>
+    <td><h2>instructions</h2></td>
+  </tr>
+  <tr>
+    <td><h3>For the chicken</h3>
+<p>½ small pineapple</p>
+<p>2 boneless, skinless chicken breasts</p>
+<p>2 tbsp sunflower oil</p>
+<p>1 onion, cut into wedges</p>
+<p>1 red pepper, deseeded and chopped</p>
+<p>1 green pepper, deseeded and chopped</p>
+<p>1 tbsp cornflour</p>
+<p>4 spring onions, trimmed and thinly diagonally sliced</p>
+<h3>For the sauce</h3>
+<p>1 tbsp cornflour</p>
+<p>300ml/10fl oz fresh pineapple juice</p>
+<p>2 garlic cloves, crushed</p>
+<p>25g/1oz piece fresh root ginger, peeled and finely grated</p>
+<p>1 tbsp dark soy sauce</p>
+<p>2 tbsp white wine vinegar</p>
+<p>2 tbsp soft light brown sugar</p>
+<p>3 tbsp tomato ketchup</p>
+<p>1 pinch dried chilli flakes</p>
+<p>freshly ground black pepper</p></td>
+    <td><p>To make the sauce, put the cornflour in a small bowl and stir in two tablespoons of the pineapple juice until smooth. Put the remaining pineapple juice in a separate bowl and stir in the garlic, ginger, soy, vinegar, sugar, ketchup and chilli flakes until thoroughly combined. Set aside.</p>
+
+<p>Put the pineapple on a board and cut off the skin. Quarter lengthways and remove the tough central core. Cut the pineapple into thick slices and set aside. Cut each chicken breast into seven to nine even pieces (depending on size).</p>
+
+<p>Heat the oil in a large non-stick frying pan or wok and stir-fry the onion and peppers for three minutes over a high heat. Coat the chicken in the cornflour and add to the pan. Stir-fry for four minutes until very lightly coloured on all sides.</p>
+
+<p>Add the pineapple and sweet and sour sauce to the pan with the chicken and bring to a simmer over a medium heat. Cook for 4–5 minutes, stirring regularly until the chicken is cooked through and the pineapple is hot.</p>
+
+<p>Stir in the cornflour and pineapple solution mixture and cook for 30–60 seconds until the sauce is thickened and glossy, turning the chicken and vegetables until nicely coated. Sprinkle with sliced spring onions and serve hot.</p></td>
+  </tr>
+</table>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="webstyles.css">
+<header>
+<table>
+  <tr>
+	<th><a href="webHome.html"><img src="home.png" alt="home"></a></th>
+    <th><h5><label for="Recipes">Recipes</label></h5></th>
+    <th><h5>Top rated</h5></th>
+    <th><h5><label for="Special occasions">Special occasions</label></h5></th>
+	<th><h5>Easy and quick</h5></th>
+    <th><h5>Cheap</h5></th>
+	<th><h5>About us</h5></th>
+  </tr>
+  <tr>
+    <td></td>
+    <td>
+      
+      <select name="Recipes" id="Recipes" onChange="goToPage()">
+        <option value="">Recipes</option>
+        <optgroup label="Meals">
+          <option value="breakfast.html">Breakfast</option>
+          <option value="lunch.html">Lunch</option>
+          <option value="dinner.html">Dinner</option>
+        </optgroup>
+        <optgroup label="Meats">
+          <option value="chicken.html">Chicken</option>
+          <option value="pork.html">Pork</option>
+          <option value="beef.html">Beef</option>
+        </optgroup>
+      </select>
+      
+   
+
+
+</td>
+    <td></td>
+	<td>
+
+    <select name="Special occasions" id="Special_occasions" onchange="goToPage2()">
+      <option value="">Special occasions</option>
+      <option value="dinner.html">Dinner party</option>
+      <option value="easter.html">Easter</option>
+      <option value="christmas.html">Christmas</option>
+      <option value="bbq.html">BBQ party</option>
+      <option value="burns-night.html">Burns night</option>
+      <option value="chinese-new-year.html">Chinese New Year</option>
+      <option value="hanukkah.html">Hanukkah</option>
+      <option value="ramadan.html">Ramadan</option>
+    </select>
+
+</td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td><input type="text" id="search" size=64></td>
+  </tr>
+</table>
+
+<script> 
+  function goToPage() {
+  // Get the select element
+  var dropdown = document.getElementById("Recipes");
+  
+  // Get the selected option
+  var selectedOption = dropdown.options[dropdown.selectedIndex];
+  
+  // Get the URL from the selected option's value attribute
+  var url = selectedOption.value;
+  
+  // Redirect to the selected recipe page
+  window.location.href = url;
+}
+
+function goToPage2() {
+  var dropdown = document.getElementById("Special_occasions");
+  var selectedValue = dropdown.options[dropdown.selectedIndex].value;
+  if (selectedValue !== "") {
+    alert(selectedValue);
+    window.location.href = selectedValue;
+  }
+}
+</script>
+
+
+</header>
+</head>
+<body>
+
+<table>
+  <tr>
+	<th><img src="lasagna266x266Label.jpg" alt="Lasagna"></th>
+    <th><img src="Chicken_roulade266x266Label.jpg" alt="Chicken roulade"></th>
+    <th><img src="Sunny_brochettes266x266Label.jpg" alt="Sunny brochettes"></th>
+  </tr>
+  <tr>
+    <td><h5><a href="lasagna.html">Lasagna</a></h5></td>
+    <td><h5><a href="Chicken_roulade.html">Chicken roulade</a></h5></td>
+    <td><h5><a href="Sunny_brochettes.html">Sunny brochettes</a></h5></td>
+  </tr>
+  <tr>
+	<th><img src="ratings1.jpg" alt="ratings"></th>
+    <th><img src="ratings2.jpg" alt="ratings"></th>
+    <th><img src="ratings3.jpg" alt="ratings"></th>
+  </tr>
+  
+</table>
+</body>
+
+</html>

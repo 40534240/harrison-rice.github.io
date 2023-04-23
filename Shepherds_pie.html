@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="webstyles.css">
+</head>
+<body>
+<table>
+  <tr>
+	<th><h1>Lets M-Eat</h1></th>
+    <th><label for="Recipes">Recipes</label></th>
+    <th>Top rated</th>
+    <th><label for="Special occasions">Special occasions</label></th>
+	<th>Easy and quick</th>
+    <th>Cheap</th>
+	<th>About us</th>
+  </tr>
+  <tr>
+    <td></td>
+    <td><select name="Recipes" id="Recipes" onChange="goToPage()">
+	<option value="recipes">Recipes</option>
+	<option value="meals.html">Meals</option>
+	<option value="meats.html">Meats</option>
+	<option value="cooking_styles.html">Cooking styles</option>
+	<option value="regional.html">Regional</option>
+	<option value="all_recipes.html">All recipes</option>
+	</select></td>
+    <td></td>
+	<td><select name="Special occasions" id="Special occasions" onchange="goToPage2()">
+	<option value="Special occasions">Special occasions</option>
+	<option value="Dinner party">Dinner party</option>
+	<option value="Easter">Easter</option>
+	<option value="Christmas">Christmas</option>
+	<option value="BBQ party">BBQ party</option>
+	<option value="Burns night">Burns night</option>
+	<option value="Chinese New Year">Chinese New Year</option>
+	<option value="Hanukkah">Hanukkah</option>
+	<option value="Ramadan">Ramadan</option></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td><input type="text" id="search" size=64></td>
+  </tr>
+</table>
+<script>
+function goToPage() {
+  var dropdown = document.getElementById("Recipes");
+  var selectedValue = dropdown.options[dropdown.selectedIndex].value;
+  if (selectedValue !== "") {
+    window.location = selectedValue;
+  }
+}
+</script>
+<script>
+function goToPage2() {
+  var dropdown = document.getElementById("Special occasions");
+  var selectedValue = dropdown.options[dropdown.selectedIndex].value;
+  if (selectedValue !== "") {
+    window.location = selectedValue;
+  }
+}
+<table>
+  <tr>
+	<th><h1></h1></th>
+    <th></th>
+  </tr>
+  <tr>
+    <td><img src="shepard.jpeg" alt="shepard"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><h2>ingredients</h2></td>
+    <td><h2>instructions</h2></td>
+  </tr>
+  <tr>
+    <td><p>25g/1oz vegetable oil or beef dripping</p>
+<p>1 large onion, finely chopped</p>
+<p>2 tbsp olive oil</p>
+<p>500g/1lb 2oz lamb mince</p>
+<p>1 tbsp plain flour</p>
+<p>2 bay leaves</p>
+<p>2 fresh thyme sprigs</p>
+<p>1 anchovy, finely chopped (optional)</p>
+<p>400g tin chopped tomatoes</p>
+<p>450ml/16fl oz chicken, beef or lamb stock</p>
+<p>2 tsp Worcestershire sauce</p>
+<p>salt and freshly ground black pepper</p>
+<h3>For the mash</h3>
+<p>700g/1lb 9oz potatoes, peeled and cut into halves or quarters</p>
+<p>55ml/2fl oz milk</p>
+<p>85g/3oz butter</p>
+<p>1 free-range egg yolk</p>
+<p>salt and freshly ground black pepper</p></td>
+    <td><p>In a large saucepan, heat the vegetable oil. Add the onion and cook for 5 minutes.</p>
+
+<p>Meanwhile, in a large frying pan, heat the olive oil and fry the mince, stirring, until browned all over. While the meat is frying, break up any lumps with the back of the spoon.</p>
+
+<p>Stir the onions, then add the flour and stir. Add the bay leaves, thyme and anchovy and stir. Add the chopped tomatoes, stock (keep a little aside, for putting into the mince pan to de-glaze the pan) and Worcestershire sauce.</p>
+
+<p>Add the cooked mince and then pour the stock mixture into empty mince pan, scraping off any bits of mince left in the pan. Pour the remaining stock into the pan containing the sauce mixture. Bring the mixture to the boil, adding a pinch of salt and pepper and let it simmer for about 45 minutes, stirring regularly.</p>
+
+<p>Preheat the oven to 200C/180C Fan/Gas 6.</p>
+
+<p>For the mash, boil the potatoes until tender. Drain, add the milk, butter and egg yolk, then mash until smooth. Season with salt and pepper.</p>
+
+<p>Pour the meat into a 1.4-litre/2½-pint ovenproof dish and spread the mash on top, smooth over and mark with a spatula. Put the dish into the oven and cook until the surface is golden brown.</p></td>
+  </tr>
+</table>
+</body>
+
+</html>
