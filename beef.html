@@ -13,13 +13,13 @@
     <select name="Recipes" id="Recipes" onChange="goToPage()">
         <option value="">Recipes</option>
         <optgroup label="Meals">
-          <option value="breakfast.html">Breakfast</option>
+          <option value="maintenance.html">Breakfast</option>
           <option value="lunch.html">Lunch</option>
           <option value="dinner.html">Dinner</option>
         </optgroup>
         <optgroup label="Meats">
           <option value="chicken.html">Chicken</option>
-          <option value="pork.html">Pork</option>
+          <option value="maintenance.html">Pork</option>
           <option value="beef.html">Beef</option>
 		  <option value="maintenance.html">Lamb</option>
           <option value="maintenance.html">Game</option>
@@ -50,14 +50,14 @@
     <td><h5>Top rated</h5></td>
 	<td><select name="Special occasions" id="Special_occasions" onchange="goToPage2()">
       <option value="">Special occasions</option>
-      <option value="dinner.html">Dinner party</option>
-      <option value="easter.html">Easter</option>
-      <option value="christmas.html">Christmas</option>
-      <option value="bbq.html">BBQ party</option>
-      <option value="burns-night.html">Burns night</option>
-      <option value="chinese-new-year.html">Chinese New Year</option>
-      <option value="hanukkah.html">Hanukkah</option>
-      <option value="ramadan.html">Ramadan</option>
+      <option value="maintenance.html">Dinner party</option>
+      <option value="maintenance.html">Easter</option>
+      <option value="maintenance.html">Christmas</option>
+      <option value="maintenance.html">BBQ party</option>
+      <option value="maintenance.html">Burns night</option>
+      <option value="maintenance.html">Chinese New Year</option>
+      <option value="maintenance.html">Hanukkah</option>
+      <option value="maintenance.html">Ramadan</option>
     </select></td>
 	<td><h5>Easy and quick</h5></td>
 	<td><h5>Cheap</h5></td>
@@ -71,26 +71,17 @@
 
 <script> 
   function goToPage() {
-  // Get the select element
   var dropdown = document.getElementById("Recipes");
-  
-  // Get the selected option
   var selectedOption = dropdown.options[dropdown.selectedIndex];
-  
-  // Get the URL from the selected option's value attribute
   var url = selectedOption.value;
-  
-  // Redirect to the selected recipe page
   window.location.href = url;
 }
 
 function goToPage2() {
-  var dropdown = document.getElementById("Special_occasions");
-  var selectedValue = dropdown.options[dropdown.selectedIndex].value;
-  if (selectedValue !== "") {
-    alert(selectedValue);
-    window.location.href = selectedValue;
-  }
+  var dropdown = document.getElementById("Recipes");
+  var selectedOption = dropdown.options[dropdown.selectedIndex];
+  var url = selectedOption.value;
+  window.location.href = url;
 }
 </script>
 </header>
@@ -110,7 +101,7 @@ function goToPage2() {
   </tr>
   <tr>
     <td><h2><a href="Sunny_brochettes.html">Sunny brochettes</a></h2></td>
-    <td><h2><a href="Shepards_pie.html">Shepherds pie</a></h2></td>
+    <td><h2><a href="Shepherds_pie.html">Shepherds pie<img src="Thistle.jpg" alt="Thistle" width="25" height="20"></a></h2></td>
   </tr>
   <tr>
     <td><img src="Sunny_brochettes.jpeg" alt="Sunny brochettes"></td>
