@@ -3,17 +3,11 @@
 <head>
 <link rel="stylesheet" href="webstyles.css">
 <header>
+<header>
 <table>
   <tr>
-	<th><a href="webHome.html"><img src="home.png" alt="home"></a></th>
-    <th><h5><label for="Recipes">Recipes</label></h5></th>
-    <th><h5>Top rated</h5></th>
-    <th><h5><label for="Special occasions">Special occasions</label></h5></th>
-	<th><h5>Easy and quick</h5></th>
-    <th><h5>Cheap</h5></th>
-	<th><h5><a href="about.html">About us</a></h5></th>
-  </tr>
-  <tr>
+	<td><a href="webHome.html"><img src="logo.png" alt="home"></a></td>
+
     <td></td>
     <td>
       
@@ -52,9 +46,10 @@
           <option value="maintenance.html">American</option>
         </optgroup>
 		<option value="all_recipes.html">All recipes</option>
-	</select>
+	</select></td>
 
-    <select name="Special occasions" id="Special_occasions" onchange="goToPage2()">
+    <td><h5>Top rated</h5></td>
+	<td><select name="Special occasions" id="Special_occasions" onchange="goToPage2()">
       <option value="">Special occasions</option>
       <option value="dinner.html">Dinner party</option>
       <option value="easter.html">Easter</option>
@@ -64,12 +59,10 @@
       <option value="chinese-new-year.html">Chinese New Year</option>
       <option value="hanukkah.html">Hanukkah</option>
       <option value="ramadan.html">Ramadan</option>
-    </select>
-
-</td>
-	<td></td>
-	<td></td>
-	<td></td>
+    </select></td>
+	<td><h5>Easy and quick</h5></td>
+	<td><h5>Cheap</h5></td>
+	<td><h5><a href="about.html">About us</a></h5></td>
 	<td><form id="form"> 
   <input type="search" id="query" name="q" placeholder="Search...">
   <button>Search</button>
@@ -79,16 +72,9 @@
 
 <script> 
   function goToPage() {
-  // Get the select element
   var dropdown = document.getElementById("Recipes");
-  
-  // Get the selected option
   var selectedOption = dropdown.options[dropdown.selectedIndex];
-  
-  // Get the URL from the selected option's value attribute
   var url = selectedOption.value;
-  
-  // Redirect to the selected recipe page
   window.location.href = url;
 }
 
@@ -101,6 +87,7 @@ function goToPage2() {
   }
 }
 </script>
+</header>
 </header>
 </head>
 <body>
@@ -132,6 +119,40 @@ padding-left:15px; color:white">Sign Up to our monthly newsletter</h1>
      </div>
 	<br>
      <button type="submit">Subscribe</button>
+
+</form>
+
+<form action="signup.html" method="get" id="signup">
+
+     <h1 style="padding-top: 15px;
+padding-bottom: 15px;
+padding-left:15px; color:white">There are 3 well known Scottish symbols hidden in our pages. For your chance to win a fantastic hamper of Scottish goodies worth £200, fill in the form to tell us what you found and on what pages</h1>
+
+     <div class="field">
+
+          <label for="symbol1">symbol1:</label>
+
+          <input type="text" id="name" name="name" placeholder="Please state which symbol and on what page" />
+
+          
+
+     </div>
+
+     <div class="field">
+
+          <label for="symbol1">symbol2:</label>
+
+          <input type="text" id="name" name="name" placeholder="Please state which symbol and on what page" />
+
+     <div class="field">
+
+          <label for="symbol1">symbol3:</label>
+
+          <input type="text" id="name" name="name" placeholder="Please state which symbol and on what page" />
+
+     </div>
+	<br>
+     <button type="submit">submit</button>
 
 </form>
 

@@ -2,62 +2,98 @@
 <html>
 <head>
 <link rel="stylesheet" href="webstyles.css">
+<header>
 <table>
   <tr>
-	<th><h1><a href="webHome.html">Lets M-Eat</a></h1></th>
-    <th><label for="Recipes">Recipes</label></th>
-    <th>Top rated</th>
-    <th><label for="Special occasions">Special occasions</label></th>
-	<th>Easy and quick</th>
-    <th>Cheap</th>
-	<th>About us</th>
-  </tr>
-  <tr>
+	<td><a href="webHome.html"><img src="logo.png" alt="home"></a></td>
+
     <td></td>
-    <td><select name="Recipes" id="Recipes" onChange="goToPage()">
-	<option value="recipes">Recipes</option>
-	<option value="meals.html">Meals</option>
-	<option value="meats.html">Meats</option>
-	<option value="cooking_styles.html">Cooking styles</option>
-	<option value="regional.html">Regional</option>
-	<option value="all_recipes.html">All recipes</option>
+    <td>
+      
+    <select name="Recipes" id="Recipes" onChange="goToPage()">
+        <option value="">Recipes</option>
+        <optgroup label="Meals">
+          <option value="breakfast.html">Breakfast</option>
+          <option value="lunch.html">Lunch</option>
+          <option value="dinner.html">Dinner</option>
+        </optgroup>
+        <optgroup label="Meats">
+          <option value="chicken.html">Chicken</option>
+          <option value="pork.html">Pork</option>
+          <option value="beef.html">Beef</option>
+		  <option value="maintenance.html">Lamb</option>
+          <option value="maintenance.html">Game</option>
+          <option value="maintenance.html">Offal</option>
+        </optgroup>
+		<optgroup label="Cooking styles">
+          <option value="maintenance.html">BBQ</option>
+          <option value="maintenance.html">Oven</option>
+          <option value="maintenance.html">Deep fry</option>
+		  <option value="maintenance.html">Slow cook</option>
+          <option value="maintenance.html">Stir fry</option>
+          <option value="maintenance.html">Air fry</option>
+		  <option value="maintenance.html">Curries and Stews</option>
+        </optgroup>
+		<optgroup label="Regional">
+          <option value="maintenance.html">Italian</option>
+          <option value="maintenance.html">French</option>
+          <option value="maintenance.html">Spanish</option>
+		  <option value="maintenance.html">British</option>
+          <option value="maintenance.html">Easturn Europe</option>
+          <option value="maintenance.html">Indian</option>
+		  <option value="maintenance.html">Mexican</option>
+          <option value="maintenance.html">American</option>
+        </optgroup>
+		<option value="all_recipes.html">All recipes</option>
 	</select></td>
-    <td></td>
-	<td><select name="Special occasions" id="Special occasions" onChange="goToPage2()">
-	<option value="Special occasions.html">Special occasions</option>
-	<option value="Dinner party.html">Dinner party</option>
-	<option value="Easter.html">Easter</option>
-	<option value="Christmas.html">Christmas</option>
-	<option value="BBQ_party.html">BBQ party</option>
-	<option value="Burns_night.html">Burns night</option>
-	<option value="Chinese_New_Year.html">Chinese New Year</option>
-	<option value="Hanukkah.html">Hanukkah</option>
-	<option value="Ramadan.html">Ramadan</option>
-	</select></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td><input type="text" id="search" size=64></td>
+
+    <td><h5>Top rated</h5></td>
+	<td><select name="Special occasions" id="Special_occasions" onchange="goToPage2()">
+      <option value="">Special occasions</option>
+      <option value="dinner.html">Dinner party</option>
+      <option value="easter.html">Easter</option>
+      <option value="christmas.html">Christmas</option>
+      <option value="bbq.html">BBQ party</option>
+      <option value="burns-night.html">Burns night</option>
+      <option value="chinese-new-year.html">Chinese New Year</option>
+      <option value="hanukkah.html">Hanukkah</option>
+      <option value="ramadan.html">Ramadan</option>
+    </select></td>
+	<td><h5>Easy and quick</h5></td>
+	<td><h5>Cheap</h5></td>
+	<td><h5><a href="about.html">About us</a></h5></td>
+	<td><form id="form"> 
+  <input type="search" id="query" name="q" placeholder="Search...">
+  <button>Search</button>
+</form></td>
   </tr>
 </table>
-<script>
-function goToPage() {
+
+<script> 
+  function goToPage() {
+  // Get the select element
   var dropdown = document.getElementById("Recipes");
-  var selectedValue = dropdown.options[dropdown.selectedIndex].value;
-  if (selectedValue !== "") {
-    window.location = selectedValue;
-  }
+  
+  // Get the selected option
+  var selectedOption = dropdown.options[dropdown.selectedIndex];
+  
+  // Get the URL from the selected option's value attribute
+  var url = selectedOption.value;
+  
+  // Redirect to the selected recipe page
+  window.location.href = url;
 }
-</script>
-<script>
+
 function goToPage2() {
-  var dropdown = document.getElementById("Special occasions");
+  var dropdown = document.getElementById("Special_occasions");
   var selectedValue = dropdown.options[dropdown.selectedIndex].value;
   if (selectedValue !== "") {
-    window.location = selectedValue;
+    alert(selectedValue);
+    window.location.href = selectedValue;
   }
 }
 </script>
+</header>
 </head>
 <body>
 
